@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,14 +28,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:textSize="36sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         android:layout_below="@id/surface_image_view"
         android:text="Hillview Gateway" />
 
     <ImageView
         android:id="@+id/webpage_image_view"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_below="@id/name_text_view"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -40,13 +46,13 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/webpage_image_view"
         android:layout_below="@id/name_text_view"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:layout_marginLeft="10dp"
         android:text="www.hillviewprep.com" />
 
     <ImageView
         android:id="@+id/email_image_view"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_below="@id/webpage_image_view"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -58,12 +64,12 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/email_image_view"
         android:layout_below="@id/webpage_image_view"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:text="johndoe@gmail.com" />
 
     <ImageView
         android:id="@+id/call_image_view"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@id/email_image_view"
@@ -75,12 +81,12 @@
         android:layout_below="@id/email_image_view"
         android:layout_toRightOf="@id/call_image_view"
         android:layout_marginLeft="10dp"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:text="000-000-0000" />
 
     <ImageView
         android:id="@+id/bizadd_image_view"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@id/call_image_view"
@@ -92,9 +98,20 @@
         android:layout_below="@id/call_image_view"
         android:layout_toRightOf="@id/bizadd_image_view"
         android:layout_marginLeft="10dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textSize="16sp"
         android:text="123 Main Street, Saratoga, CA." />
+
+
+    <TextView
+        android:id="@+id/tagline_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bizadd_text_view"
+        android:textSize="18sp"
+        android:text="Enter College or High School of your choice by Learning Faster, Testing Smarter, Scoring Higher. Discover your unique learning abilities with our methods." />
+
 
     <TextView
         android:id="@+id/prep_text_view"
@@ -102,19 +119,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tagline_text_view"
         android:textSize="18sp"
         android:textStyle="bold"
         android:text="SAT|ACT  HSPT|ISEE|SSAT test prep." />
 
-    <TextView
-        android:id="@+id/tagline_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_above="@id/prep_text_view"
-        android:textSize="18sp"
-        android:text="Enter College or High School of your choice by Learning Faster, Testing Smarter, Scoring Higher. Discover your unique learning abilities with our methods." />
-
-
 </RelativeLayout>
+
+</ScrollView>
